@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.source-1 {
+  fill: #fff;
+}
+.source-2 {
+  fill: #02817c;
+}
+.source-3,
+.source-4,
+.source-5 {
+  fill: none;
+  stroke-miterlimit: 10;
+}
+.source-3 {
+  stroke: #0b817c;
+}
+.source-3,
+.source-5 {
+  stroke-width: 1.25px;
+}
+.source-4,
+.source-5 {
+  stroke: #0c847c;
+}
+.source-4 {
+  stroke-width: 1.02px;
+}
+
+.deliver-1 {
+  fill: #fff;
+}
+.deliver-2 {
+  fill: none;
+  stroke: #0b817c;
+  stroke-miterlimit: 10;
+  stroke-width: 1.17px;
+}
+.deliver-3 {
+  fill: #02817c;
+}
+.customer-1 {
+  fill: #fff;
+}
+.customer-2 {
+  fill: #02817c;
+}
+.customer-3,
+.customer-4 {
+  fill: none;
+  stroke: #0b817c;
+  stroke-miterlimit: 10;
+}
+.customer-3 {
+  stroke-width: 1.21px;
+}
+.customer-4 {
+  stroke-width: 1.13px;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

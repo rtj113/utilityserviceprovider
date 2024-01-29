@@ -7,7 +7,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between bg-white">
       <HomeLogin />
       <UtilityCards />
-      <section className="mb-2 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left text-black p-24">
+      <section className="mb-2 text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left text-black p-24">
           <h2 className="mb-2 text-2xl font-bold tracking-tight text-primary">
           Explore CPA's service area
           </h2>

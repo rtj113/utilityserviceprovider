@@ -7,14 +7,14 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between bg-white">
       <HomeLogin />
       <UtilityCards />
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left text-black p-24">
-          <h2>
-            Docs
+      <section className="mb-2 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left text-black p-24">
+          <h2 className="mb-2 text-2xl font-bold tracking-tight text-primary">
+          Explore CPA's service area
           </h2>
           <p>
-            Find in-depth information about Next.js features and API.
+          Learn how CPA’s 32 cities and the unincorporated areas of Los Angeles and Ventura Counties lead the way to a clean energy future. Click on an icon below to discover how much Greenhouse Gas Emissions have been avoided in the communities we serve and more.
           </p>    
-      </div>
+      </section>
     </main>
   );
 }
